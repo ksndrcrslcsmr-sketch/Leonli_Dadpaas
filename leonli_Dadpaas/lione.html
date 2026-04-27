@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonli Dadpaas - Web Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Custom Scroll Bar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #1e40af, #3b82f6);
+            border-radius: 4px;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hover Effect for Cards */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-indigo-700 via-blue-700 to-sky-600 text-white py-16 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-pulse">
+                <i class="fa-solid fa-user-tie mr-2"></i> LEONLI DADPAAS
+            </h1>
+            <h2 class="text-xl md:text-2xl font-light mb-2">Bachelor of Science in Business Administration</h2>
+            <p class="text-lg font-semibold text-blue-100 bg-white/20 inline-block px-4 py-1 rounded-full">
+                Major in Marketing Management
+            </p>
+            <p class="mt-6 max-w-2xl mx-auto text-blue-100 text-sm md:text-base">
+                "Dedicated and results-oriented professional with a strong foundation in marketing strategies,
+                business administration, and customer relations."
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- Objective -->
+        <section
+            class="mb-10 bg-gradient-to-r from-indigo-600 to-blue-600 p-8 rounded-2xl shadow-md text-white fade-in card-hover">
+            <h3 class="text-2xl font-bold mb-4 pb-3 border-b-2 border-white/30">
+                <i class="fa-solid fa-bullseye mr-2"></i>Career Objective
+            </h3>
+            <p class="leading-relaxed text-blue-100 text-center text-lg italic">
+                "To secure a challenging position in Marketing and Business Administration where I can utilize my
+                educational background and practical skills to contribute effectively to the company’s success
+                while growing professionally in a dynamic environment."
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-10 bg-white p-8 rounded-2xl shadow-md border border-gray-100 fade-in card-hover">
+            <h3 class="text-2xl font-bold gradient-text mb-6 pb-3 border-b-2 border-blue-100">
+                <i class="fa-solid fa-graduation-cap mr-2"></i>Education
+            </h3>
+            <div class="mb-6 pl-4 border-l-4 border-blue-500">
+                <p class="font-bold text-xl text-gray-800">Bachelor of Science in Business Administration</p>
+                <p class="text-blue-700 font-medium">Major in Marketing Management</p>
+                <p class="text-sm text-gray-500 mt-1"><i class="fa-solid fa-building-columns"></i> [Name of University]
+                    | <i class="fa-solid fa-calendar"></i> [Year Started] – Present</p>
+            </div>
+            <div class="pl-4 border-l-4 border-gray-300">
+                <p class="font-bold text-xl text-gray-800">Secondary Education</p>
+                <p class="text-sm text-gray-500 mt-1"><i class="fa-solid fa-building-columns"></i> [Name of High School]
+                    | <i class="fa-solid fa-calendar-check"></i> Graduated: [Year]</p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-10 bg-white p-8 rounded-2xl shadow-md border border-gray-100 fade-in card-hover">
+            <h3 class="text-2xl font-bold gradient-text mb-6 pb-3 border-b-2 border-blue-100">
+                <i class="fa-solid fa-briefcase mr-2"></i>Professional Experience
+            </h3>
+
+            <div class="mb-8">
+                <p class="font-bold text-xl text-indigo-800">Marketing Intern</p>
+                <p class="text-sm text-gray-500 bg-indigo-50 inline-block px-3 py-1 rounded-full mb-3"><i
+                        class="fa-solid fa-location-dot"></i> [Company Name] | [Dates]</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Developed and implemented marketing campaigns to increase brand visibility.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Conducted market research and analyzed consumer trends to identify opportunities.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Managed social media platforms and created engaging content to boost online presence.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Coordinated with sales teams for event planning and product promotions.</li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="font-bold text-xl text-indigo-800">Administrative Assistant</p>
+                <p class="text-sm text-gray-500 bg-indigo-50 inline-block px-3 py-1 rounded-full mb-3"><i
+                        class="fa-solid fa-location-dot"></i> [Company Name] | [Dates]</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Handled customer inquiries and maintained strong client relationships.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Organized files, records, and inventory data efficiently.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Supported daily office operations and ensured smooth communication flow.</li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        Performed data encoding and documentation tasks accurately.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="mb-10 bg-white p-8 rounded-2xl shadow-md border border-gray-100 fade-in card-hover">
+            <h3 class="text-2xl font-bold gradient-text mb-6 pb-3 border-b-2 border-blue-100">
+                <i class="fa-solid fa-rocket mr-2"></i>Skills & Expertise
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-5 rounded-xl">
+                    <p class="font-bold text-lg text-blue-900 mb-3"><i class="fa-solid fa-bullhorn"></i> Marketing
+                        Skills</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Strategic Planning</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Brand Development</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Digital Marketing</span>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Sales & Negotiation</span>
+                    </div>
+                </div>
+                <div class="bg-sky-50 p-5 rounded-xl">
+                    <p class="font-bold text-lg text-sky-900 mb-3"><i class="fa-solid fa-laptop-code"></i> Technical
+                        Skills</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-sky-600 text-white px-3 py-1 rounded-full text-sm">MS Office</span>
+                        <span class="bg-sky-600 text-white px-3 py-1 rounded-full text-sm">Canva Design</span>
+                        <span class="bg-sky-600 text-white px-3 py-1 rounded-full text-sm">Data Analysis</span>
+                        <span class="bg-sky-600 text-white px-3 py-1 rounded-full text-sm">Google Workspace</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 fade-in card-hover">
+            <h3 class="text-2xl font-bold gradient-text mb-6 pb-3 border-b-2 border-blue-100">
+                <i class="fa-solid fa-address-book mr-2"></i>Contact Information
+            </h3>
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+                <a href="mailto:[your-email@example.com]" class="p-4 hover:bg-gray-50 rounded-xl transition">
+                    <i class="fa-solid fa-envelope text-3xl text-blue-600 mb-2"></i>
+                    <p class="font-semibold">Email</p>
+                    <p class="text-sm text-gray-500">[your-email@example.com]</p>
+                </a>
+                <div class="p-4 hover:bg-gray-50 rounded-xl transition">
+                    <i class="fa-solid fa-phone text-3xl text-green-600 mb-2"></i>
+                    <p class="font-semibold">Phone</p>
+                    <p class="text-sm text-gray-500">[Your Phone Number]</p>
+                </div>
+                <div class="p-4 hover:bg-gray-50 rounded-xl transition">
+                    <i class="fa-solid fa-map-location-dot text-3xl text-red-600 mb-2"></i>
+                    <p class="font-semibold">Location</p>
+                    <p class="text-sm text-gray-500">[Your City/Address]</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+        <p>&copy; 2025 Leonli Dadpaas. All rights reserved. | Designed with ❤️</p>
+    </footer>
+
+    <!-- JavaScript for Animation -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (
+            entries, appearOnScroll
+        ) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+
+</html>
